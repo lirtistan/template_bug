@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Standard";
+  src: local(Helvetica), local(Arial), local(sans-serif);
+}
+@font-face {
+  font-family: "Monotone";
+  src: local("Courier New"), local(monospace);
+}
+* {
+  font-family: "Standard", sans-serif;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #2d2e3c;
+  color: #b8b9c9;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+a, a:active, a:visited {
+  color: #cd5683;
+}
+
+.page {
+  margin: 4rem auto auto;
+  width: 70%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 175%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+h3 {
+  font-size: 138%;
+}
+
+h4 {
+  font-size: 125%;
+}
+
+h5 {
+  font-size: 115%;
+}
+
+h6 {
+  font-size: 105%;
+}

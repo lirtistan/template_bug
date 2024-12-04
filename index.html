@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Playground</title>
+		<title>see issue https://github.com/golang/go/issues/70681</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="common.css" type="text/css">
 	</head>
 
 	<body>
-		<div class="hstack">
-			<p>Foo</p>
-			{{ .baz }}
-			<p>Foo</p>
+		<div class="page">
+			<h3>Render <u>test.html</u> <b>text/template</b> with an empty...</h3>
+			<div><a href="/map-of-str">type MapOfStr = map[string]string</a> as argument to template.Execute.</div>
+			<div><a href="/map-of-any">type MapOfAny = map[string]any</a> as argument to template.Execute.</div>
+			<hr>
+			<p>
+				The expected behavior is that a map[string]any without matching key renders nothing (not &lt;no value&gt;), like
+				<b>html/template</b> does.
+			</p>
 		</div>
 	</body>
 </html>
